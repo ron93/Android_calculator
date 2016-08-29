@@ -145,7 +145,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//subtract button
 
+        buttonSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mValueOne  = Float.parseFloat(edt1.getText() + "");
+                mSubtract = true;
+                edt1.setText(null);
+
+            }
+        });
+
+
+//multiplication button
 
     }
 
