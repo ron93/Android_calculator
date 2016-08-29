@@ -211,7 +211,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+//button C
+        buttonC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText("");
+            }
+        });
 
 
     }
