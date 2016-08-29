@@ -168,6 +168,17 @@ public class MainActivity extends AppCompatActivity {
                 edt1.setText(null);
             }
         });
+
+//division button
+
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mValueOne = Float.parseFloat(edt1.getText() +"");
+                mDivision = true;
+                edt1.setText(null);
+            }
+        });
     }
 
 }
