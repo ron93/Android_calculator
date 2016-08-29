@@ -179,6 +179,41 @@ public class MainActivity extends AppCompatActivity {
                 edt1.setText(null);
             }
         });
+
+
+
+//equal button
+
+        buttonEqual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mValueTwo = Float.parseFloat(edt1.getText() + "");
+
+                if(mAddition == true){
+                    edt1.setText(mValueOne+mValueTwo + "");
+                    mAddition = false;
+                }
+
+                if(mSubtract == true){
+                    edt1.setText(mValueOne-mValueTwo +"");
+                    mSubtract = false;
+                }
+                if(mDivision == true){
+                    edt1.setText(mValueOne/mValueTwo +"");
+                    mDivision = false;
+                }
+
+                if(mMultiplication == true){
+                    edt1.setText(mValueOne * mValueTwo +"");
+                    mMultiplication = false;
+                }
+
+            }
+        });
+
+
+
+
     }
 
 }
