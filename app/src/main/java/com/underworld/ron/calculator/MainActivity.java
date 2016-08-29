@@ -160,6 +160,14 @@ public class MainActivity extends AppCompatActivity {
 
 //multiplication button
 
+        buttonMul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mValueOne = Float.parseFloat(edt1.getText() +"");
+                mMultiplication = true;
+                edt1.setText(null);
+            }
+        });
     }
 
 }
