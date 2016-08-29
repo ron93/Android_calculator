@@ -2,6 +2,7 @@ package com.underworld.ron.calculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -41,5 +42,90 @@ public class MainActivity extends AppCompatActivity {
 
 //button listeners
 
+//button1
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText()+ "1");
+
+            }
+        });
+
+//button2
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText() + "2");
+            }
+        });
+
+//button3
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText() + "3");
+            }
+        });
+
+//button4
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText()+ "4");
+            }
+        });
+
+//button5
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.setText() + "5");
+            }
+        });
+
+//button6
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText()+"6");
+            }
+        });
+
+//button7
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText()+ "7");
+            }
+        });
+
+//button8
+
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText()+ "9");
+            }
+        });
+
+
+//button9
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText()+"10");
+            }
+        });
+
+//button0
+        button0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edt1.setText(edt1.getText() + "0");
+            }
+        });
     }
+
 }
