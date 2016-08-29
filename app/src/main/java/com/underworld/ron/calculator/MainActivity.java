@@ -126,6 +126,27 @@ public class MainActivity extends AppCompatActivity {
                 edt1.setText(edt1.getText() + "0");
             }
         });
+
+
+
+//button add
+
+        buttonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (edt1 == null){
+                    edt1.setText("");
+                }
+                else {
+                    mValueOne = Float.parseFloat(edt1.getText()+ "");
+                    mAddition = True;
+                    edt1.setText(null);
+                }
+            }
+        });
+
+
+
     }
 
 }
