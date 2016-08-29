@@ -13,7 +13,9 @@ public class MainActivity extends AppCompatActivity {
     EditText edt1 ;
     float mValueOne , mValueTwo ;
 
-    boolean MAddition ,  mSubtract , mMultiplication ;
+
+    boolean mAddition , mSubtract ,mMultiplication ,mDivision ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         buttonAdd = (Button) findViewById(R.id.buttonadd);
         buttonC = (Button) findViewById(R.id.buttonC);
         buttonDivision = (Button) findViewById(R.id.buttondiv);
-        buttonEqual = (Button) findViewById(R.id.buttondiv);
-        buttonMul = (Button) findViewById(R.id.buttondiv);
+        buttonEqual = (Button) findViewById(R.id.buttoneql);
+        buttonMul = (Button) findViewById(R.id.buttonmul);
         buttonSub = (Button) findViewById(R.id.buttonsub);
         edt1 = (EditText) findViewById(R.id.edt1);
 
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                edt1.setText(edt1.setText() + "5");
+                edt1.setText(edt1.getText() + "5");
             }
         });
 
@@ -106,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                edt1.setText(edt1.getText()+ "9");
+                edt1.setText(edt1.getText()+ "8");
             }
         });
 
@@ -115,9 +117,14 @@ public class MainActivity extends AppCompatActivity {
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                edt1.setText(edt1.getText()+"10");
+                edt1.setText(edt1.getText()+"9");
             }
         });
+
+
+
+
+
 
 //button0
         button0.setOnClickListener(new View.OnClickListener() {
@@ -139,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     mValueOne = Float.parseFloat(edt1.getText()+ "");
-                    mAddition = True;
+                    mAddition = true;
                     edt1.setText(null);
                 }
             }
@@ -198,6 +205,7 @@ public class MainActivity extends AppCompatActivity {
                     edt1.setText(mValueOne-mValueTwo +"");
                     mSubtract = false;
                 }
+
                 if(mDivision == true){
                     edt1.setText(mValueOne/mValueTwo +"");
                     mDivision = false;
@@ -218,6 +226,9 @@ public class MainActivity extends AppCompatActivity {
                 edt1.setText("");
             }
         });
+
+
+
 
 
     }
